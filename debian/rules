@@ -41,7 +41,7 @@ UMAJOR		   = $(shell dpkg-parsechangelog | sed -n '/^Version:/s/^Version: //p' |
 # changes, up this one too!
 ABI_VERSION	   = 3.7-0
 
-export DH_OPTIONS += -O-Bdebian/build-tree --dbg-package=syslog-ng-dbg
+export DH_OPTIONS += -O-Bdebian/build-tree -O--dbg-package=syslog-ng-dbg
 
 CFLAGS		?= $(shell dpkg-buildflags --get CFLAGS)
 LDFLAGS		?= $(shell dpkg-buildflags --get LDFLAGS)
@@ -180,11 +180,6 @@ override_dh_gencontrol:
 	dh_gencontrol -- -Vsng:Modules=$(shell debian/tools/list-modules.sh optional) \
 			 -Vsng:CoreModules=$(shell debian/tools/list-modules.sh core) \
 			 -Vsng:ABI=${ABI_VERSION}
-
-# Sadly, dh_python2 barfs on --dbg-package=, so we work it around by
-# clearing DH_OPTIONS here.
-override_dh_python2:
-	DH_OPTIONS="" dh_python2
 
 ##
 #* Other, non-override targets
