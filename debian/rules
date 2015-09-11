@@ -46,24 +46,12 @@ export DH_OPTIONS += -O-Bdebian/build-tree -O--dbg-package=syslog-ng-dbg
 CFLAGS		?= $(shell dpkg-buildflags --get CFLAGS)
 LDFLAGS		?= $(shell dpkg-buildflags --get LDFLAGS)
 
-
 # We want to enforce systemd support on Linux, but disable it
 # everywhere else.
 ifeq ($(shell dpkg-architecture -qDEB_HOST_ARCH_OS),linux)
 SYSTEMD_CONFIGURE_OPTS = --enable-systemd --with-systemd-journal=system
 else
 SYSTEMD_CONFIGURE_OPTS = --disable-systemd
-endif
-
-# If DH_QUIET is set, then we want silent mode.
-# If DH_VERBOSE is set, we do not want silent mode.
-# If neither is set, we want the default: verbose mode.
-SILENT_MODE	       = --disable-silent-rules
-ifneq (,${DH_QUIET})
-SILENT_MODE	       = --enable-silent-rules
-endif
-ifneq (,${DH_VERBOSE})
-SILENT_MODE	       = --disable-silent-rules
 endif
 
 ##
@@ -89,7 +77,6 @@ override_dh_auto_configure:
 		--localstatedir=/var/lib/syslog-ng \
 		--datadir=/usr/share/syslog-ng \
 		--libdir=/usr/lib/syslog-ng \
-		${SILENT_MODE} \
 		\
 		--enable-dynamic-linking \
 		--enable-ssl \
