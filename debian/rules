@@ -112,18 +112,6 @@ override_dh_auto_configure:
 		${SYSTEMD_CONFIGURE_OPTS} \
 		${EXTRA_CONFIGURE_OPTS}
 
-# Building is fine, but the manpages need some sed work, to replace
-# /opt/syslog-ng with something sensible.
-override_dh_auto_build:
-	dh_auto_build
-	-for f in debian/build-tree/doc/man/*; do \
-		sed -e "s#/opt/syslog\\\-ng/etc#/etc/syslog-ng#g" \
-		    -e "s#/opt/syslog\\\-ng##g" \
-		    -e "/affile/{s#,#, #g}" \
-		    -e 's#^/$$##' <$$f >$$f.new && \
-		rm $$f && mv $$f.new $$f; \
-	done
-
 # The pkg-config .pc file is installed into ${libdir}/pkgconfig, but
 # we override libdir above to place everything useful there. We want
 # the .pc file elsewhere, though, so do that here at install time.
