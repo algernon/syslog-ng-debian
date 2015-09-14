@@ -1,4 +1,4 @@
-syslog-ng (3.7.1-1~mhp-1) unstable; urgency=medium
+syslog-ng (3.7.1-1~mhp1) unstable; urgency=medium
 
   [ Gergely Nagy <algernon@madhouse-project.org> ]
   * New upstream release.
