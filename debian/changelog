@@ -1,4 +1,4 @@
-syslog-ng (3.7.1-1) experimental; urgency=medium
+syslog-ng (3.7.1-1~mhp-1) unstable; urgency=medium
 
   [ Gergely Nagy <algernon@madhouse-project.org> ]
   * New upstream release.
@@ -15,8 +15,9 @@ syslog-ng (3.7.1-1) experimental; urgency=medium
   * Use dh-exec to install tty10.conf, instead of doing a crazy dance in
     debian/rules.
   * Bump debian/compat to 10.
+  * Add Origin and Bugs fields, to signify that these are unofficial packages.
 
- -- Gergely Nagy <algernon@madhouse-project.org>  Mon, 14 Sep 2015 10:54:43 +0200
+ -- Gergely Nagy <algernon@madhouse-project.org>  Mon, 14 Sep 2015 11:03:43 +0200
 
 syslog-ng (3.6.1+git20141206-g4d90138-4) experimental; urgency=medium
 

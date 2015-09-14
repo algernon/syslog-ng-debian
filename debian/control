@@ -1,9 +1,7 @@
 Source: syslog-ng
 Section: admin
 Priority: extra
-Maintainer: syslog-ng maintainers <syslog-ng-maintainers@lists.alioth.debian.org>
-Uploaders: Laszlo Boszormenyi (GCS) <gcs@debian.org>,
-           SZALAY Attila <sasa@debian.org>
+Maintainer: Gergely Nagy <algernon@madhouse-project.org>
 Build-Depends: debhelper (>= 9~),
                dh-autoreconf,
                automake (>= 1:1.11.1),
@@ -31,8 +29,10 @@ Build-Depends: debhelper (>= 9~),
 Build-Conflicts: autoconf2.13
 Standards-Version: 3.9.6
 Homepage: http://www.syslog-ng.org/
-Vcs-Git: git://anonscm.debian.org/syslog-ng/syslog-ng-debian.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=syslog-ng/syslog-ng-debian.git
+Vcs-Git: https://github.com/algernon/syslog-ng-debian.git
+Vcs-Browser: https://github.com/algernon/syslog-ng-debian
+Origin: MadHouse
+Bugs: mailto:algernon@madhouse-project.org
 
 Package: syslog-ng
 Architecture: all
