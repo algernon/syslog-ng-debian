@@ -14,8 +14,9 @@ syslog-ng (3.7.1-1) experimental; urgency=medium
   * Added a new syslog-ng-mod-python package.
   * Use dh-exec to install tty10.conf, instead of doing a crazy dance in
     debian/rules.
+  * Bump debian/compat to 10.
 
- -- Gergely Nagy <algernon@madhouse-project.org>  Wed, 09 Sep 2015 16:44:34 +0200
+ -- Gergely Nagy <algernon@madhouse-project.org>  Mon, 14 Sep 2015 10:54:43 +0200
 
 syslog-ng (3.6.1+git20141206-g4d90138-4) experimental; urgency=medium
 
