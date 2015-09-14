@@ -180,9 +180,11 @@ override_dh_gencontrol:
 build-indep: ;
 
 # Because debian/rules get-orig-source is easier to type than uscan,
-# and is less scary because of using no force...:
+# and is less scary because of using no force... Not to mention that
+# if we're building from a git snapshot, we need something more clever
+# than uscan.
 get-orig-source:
-	uscan --force-download --verbose
+	debian/tools/get-orig-source.sh
 
 # And for the rest, there is debhelper!
 %:
