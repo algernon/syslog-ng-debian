@@ -189,3 +189,7 @@ get-orig-source:
 # And for the rest, there is debhelper!
 %:
 	dh $@ --with autoreconf,systemd,python2 --parallel
+
+## Local variables:
+## page-delimiter: "#\\*"
+## End:
