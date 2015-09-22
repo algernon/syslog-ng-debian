@@ -2,8 +2,6 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: syslog-ng
 Upstream-Contact: Syslog-ng users' and developers' mailing list <syslog-ng@lists.balabit.hu>
 Source: git://github.com/balabit/syslog-ng.git
-Copyright: Copyright (C) Balázs Scheidler
-           Copyright (C) BalaBit IT Security Ltd.
 
 Files: *
 Copyright: Copyright (C) Balázs Scheidler
