@@ -16,8 +16,9 @@ syslog-ng (3.7.1+2015.09.14-g5205a76-1~mhp1) unstable; urgency=medium
     debian/rules.
   * Bump debian/compat to 10.
   * Add Origin and Bugs fields, to signify that these are unofficial packages.
+  * Significantly simplify debian/copyright.
 
- -- Gergely Nagy <algernon@madhouse-project.org>  Mon, 14 Sep 2015 11:03:43 +0200
+ -- Gergely Nagy <algernon@madhouse-project.org>  Tue, 22 Sep 2015 14:16:47 +0200
 
 syslog-ng (3.6.1+git20141206-g4d90138-4) experimental; urgency=medium
 
