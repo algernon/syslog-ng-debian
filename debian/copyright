@@ -4,103 +4,34 @@ Upstream-Contact: Syslog-ng users' and developers' mailing list <syslog-ng@lists
 Source: git://github.com/balabit/syslog-ng.git
 
 Files: *
-Copyright: Copyright (C) Balázs Scheidler
-           Copyright (C) BalaBit IT Security Ltd.
+Copyright: Copyright (C) 1998-2015 BalaBit IT Security Ltd.
+           Copyright (C) 2014-2015 BalaBit S.a.r.l.
+           Copyright (C) Adam Arsenault
+           Copyright (C) Balázs Scheidler
+           Copyright (C) Balint Kovacs
+           Copyright (C) Gergely Nagy
+           Copyright (C) Jonathan W. Marks
+           Copyright (C) Laszlo Budai
+           Copyright (C) Márton Illés
+           Copyright (C) Nagy, Attila
+           Copyright (C) Peter Gyongyosi
+           Copyright (C) Tibor Benke
+           Copyright (C) Tihamer Petrovics
+           Copyright (C) Viktor Juhasz
+           Copyright (C) Viktor Tusa
 License: GPL-2+ with OpenSSL exception
 
 Files: lib/*
        libtest/*
        syslog-ng/*
        syslog-ng-ctl/*
-Copyright: Copyright (C) Balázs Scheidler
-           Copyright (C) BalaBit IT Security Ltd.
-License: LGPL-2.1+ with OpenSSL exception
-
-Files: lib/ack-tracker.h
-       lib/bookmark.h
-       lib/early_ack_tracker.c
-       lib/host-id.*
-       lib/late_ack_tracker.c
-       lib/ringbuffer.*
-       lib/template/common-template-typedefs.h
-Copyright: Copyright (C) BalaBit IT Ltd.
+Copyright: Copyright (C) 1998-2015 BalaBit IT Security Ltd.
+           Copyright (C) 2014-2015 BalaBit S.a.r.l.
+           Copyright (C) Balázs Scheidler
+           Copyright (C) Gergely Nagy
            Copyright (C) Laszlo Budai
-License: LGPL-2.1+ with OpenSSL exception
-
-Files: lib/compat/time.h
-       lib/filter/filter-in-list.*
-       lib/logproto-indented-multiline-server.*
-       lib/logthrdestdrv.*
-       lib/scratch-buffers.*
-       lib/tests/test_cfg_tree.c
-       lib/type-hinting.*
-       lib/value-pairs.*
-       lib/vptransform.*
-       scl/graphite/*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-           Copyright (C) Gergely Nagy
-License: LGPL-2.1+ with OpenSSL exception
-
-Files: lib/pathutils.*
-       lib/persistable-state-presenter.*
-       lib/presented-persistable-state.h
-       lib/rcptid.*
-       lib/rewrite/rewrite-groupset.c
-       lib/run-id.*
-       lib/tests/test_rcptid.c
-       lib/tests/test_runid.c
-       libtest/config_parse_lib.*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-           Copyright (C) Viktor Tusa
            Copyright (C) Viktor Juhasz
-License: LGPL-2.1+ with OpenSSL exception
-
-Files: lib/persistable-state-header.h
-Copyright: Copyright (C) BalaBit IT Security Ltd.
            Copyright (C) Viktor Tusa
-           Copyright (C) Viktor Juhasz
-           Copyright (C) Balázs Scheidler
-License: LGPL-2.1+ with OpenSSL exception
-
-Files: lib/rewrite/rewrite-groupset.h
-       libtest/persist_lib.*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-           Copyright (C) Viktor Tusa
-License: LGPL-2.1+ with OpenSSL exception
-
-Files: lib/uuid.*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-           Copyright (C) Balázs Scheidler
-           Copyright (C) Gergely Nagy
-License: LGPL-2.1+ with OpenSSL exception
-
-Files: lib/cache.*
-       lib/compat/glib.h
-       lib/compat/inet_aton.c
-       lib/compat/lfs.h
-       lib/compat/pio.h
-       lib/compat/socket.h
-       lib/compat/string.h
-       lib/compat/strtok_r.c
-       lib/control/control-server.*
-       lib/control/control-server-unix.c
-       lib/hostname.h
-       lib/hostname-unix.c
-       lib/host-resolve.*
-       lib/reloc.*
-       lib/template/tests/test_template_compile.c
-       lib/tests/test_cache.c
-       lib/tests/test_cfg_lexer_subst.c
-       lib/tests/test_hostname.c
-       lib/tests/test_host_resolve.c
-       lib/tests/test_log_message.c
-       lib/tests/test_parse_number.c
-       lib/tests/test_reloc.c
-       lib/tests/test_type_hints.c
-       lib/thread-utils.h
-       lib/versioning.h
-       scl/nodejs/*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
 License: LGPL-2.1+ with OpenSSL exception
 
 Files: lib/ivykis/*
@@ -116,37 +47,11 @@ License: ivykis-man
  of the modification is added to the header.
 
 Files: lib/jsonc/*
-Copyright: Copyright (C) Metaparadigm Pte. Ltd
-           Copyright (C) Eric Haszlakiewicz
-License: Expat
-
-Files: lib/jsonc/debug.h
-       lib/jsonc/json.h
-       lib/jsonc/json_object.*
-       lib/jsonc/json_object_iterator.*
-       lib/jsonc/linkhash.*
-Copyright: Copyright (C) Hewlett-Packard Development Company, L.P
+Copyright: Copyright (C) Eric Haszlakiewicz
+           Copyright (C) Hewlett-Packard Development Company, L.P
            Copyright (C) Metaparadigm Pte. Ltd
-           Copyright (C) Eric Haszlakiewicz
+           Copyright (C) Yahoo! Inc.
 License: Expat
-
-Files: lib/jsonc/json_tokener.c
-       lib/jsonc/printbuf.*
-Copyright: Copyright (C) Yahoo! Inc.
-           Copyright (C) Metaparadigm Pte. Ltd
-           Copyright (C) Eric Haszlakiewicz
-License: Expat
-
-Files: modules/*
-Copyright: Copyright (C) Balázs Scheidler
-           Copyright (C) BalaBit IT Security Ltd.
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/afamqp/*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-           Copyright (C) Nagy, Attila <bra@fsn.hu>
-           Copyright (C) Gergely Nagy
-License: GPL-2+ with OpenSSL exception
 
 Files: modules/afamqp/rabbitmq-c/*
 Copyright: Copyright (C) VMWare, Inc. and Tony Garnock-Jones
@@ -161,120 +66,9 @@ Files: modules/afamqp/rabbitmq-c/librabbitmq/win32/msinttypes/stdint.h
 Copyright: Copyright (C) Alexander Chemeris
 License: BSD-3-clause
 
-Files: modules/afmongodb/*
-       modules/afsmtp/*
-       modules/afsocket/unix-credentials.*
-       modules/json/json-parser.*
-       modules/json/json-parser-parser.*
-       modules/json/json-plugin.*
-       modules/json/tests/test_format_json.c
-       modules/linux-kmsg-format/*
-       modules/kvformat/tests/test_format_welf.c
-       modules/python/python-dest.*
-       modules/python/python-parser.*
-       modules/python/python-plugin.c
-       modules/python/python-value-pairs.*
-       modules/riemann/*
-       modules/system-source/*
-Copyright: Copyright (c) BalaBit IT Ltd.
-           Copyright (C) Gergely Nagy
-License: GPL-2+ with OpenSSL exception
-
 Files: modules/afmongodb/libmongo-client/*
 Copyright: Copyright (C) Gergely Nagy
 License: Apache-2.0
-
-Files: modules/afsocket/systemd-syslog-source.*
-Copyright: Copyright (C) BalaBit IT Ltd.
-           Copyright (C) Tibor Benke
-           Copyright (C) Balázs Scheidler
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/afsocket/transport-unix-socket.c
-       modules/basicfuncs/cond-funcs.c
-Copyright: Copyright (C) BalaBit IT Ltd.
-           Copyright (C) Gergely Nagy
-           Copyright (C) Balázs Scheidler
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/afstomp/*
-Copyright: Copyright (C) Nagy, Attila <bra@fsn.hu>
-           Copyright (C) BalaBit IT Ltd.
-           Copyright (C) Viktor Tusa
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/afstomp/stomp.*
-Copyright: Copyright (C) Viktor Tusa
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/basicfuncs/str-funcs.c
-Copyright: Copyright (C) BalaBit IT Ltd.
-           Copyright (C) Viktor Tusa
-           Copyright (C) Balázs Scheidler
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/redis/*
-Copyright: Copyright (C) Tihamer Petrovics <tihameri@gmail.com>
-           Copyright (C) BalaBit IT Ltd.
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/cryptofuncs/*
-Copyright: Copyright (c) BalaBit IT Ltd.
-           Copyright (C) Gergely Nagy
-           Copyright (C) Peter Gyongyosi
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/dbparser/patternize.*
-Copyright: Copyright (C) Péter Gyöngyösi
-           Copyright (C) BalaBit IT Security Ltd.
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/geoip/*
-       scl/*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/geoip/geoip-parser.*
-       modules/geoip/geoip-parser-parser.*
-       modules/geoip/geoip-plugin.c
-Copyright: Copyright (C) Gergely Nagy
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/graphite/*
-Copyright: Copyright (C) BalaBit IT Ltd.
-           Copyright (C) Viktor Tusa
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/java-modules/http/src/main/java/org/syslog_ng/http/HTTPDestinationOptions.java
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-           Copyright (C) Adam Arsenault
-           Copyright (C) Viktor Juhasz
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/json/format-json.c
-Copyright: Copyright (c) BalaBit IT Ltd.
-           Copyright (C) Balint Kovacs
-           Copyright (C) Gergely Nagy
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/systemd-journal/*
-       modules/java-modules/*
-       modules/java/*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-           Copyright (C) Viktor Juhasz
-License: GPL-2+ with OpenSSL exception
-
-Files: modules/kvformat/*
-Copyright: Copyright (C) BalaBit IT Security Ltd.
-License: GPL-2+ with OpenSSL exception
-
-Files: scl/syslogconf/convert-syslogconf.awk
-Copyright: Jonathan W. Marks <j-marks@uiuc.edu>
-License: GPL-2+ with OpenSSL exception
-
-Files: scl/rewrite/cc-mask.conf
-Copyright: Copyright (C) Márton Illés
-License: GPL-2+ with OpenSSL exception
 
 Files: debian/*
 Copyright: Copyright (C) 2011-2015 Gergely Nagy <algernon@madhouse-project.org>,
